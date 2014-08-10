@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6185.11" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LELibraryViewController">
+            <connections>
+                <outlet property="tableView" destination="749-h4-LHQ" id="FT3-mV-eYv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="749-h4-LHQ">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="scrollIndicatorInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="64"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="TMb-Pg-Bji"/>
+                        <outlet property="delegate" destination="-1" id="Mjd-6c-FI0"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMV-X1-A7c">
+                    <rect key="frame" x="0.0" y="536" width="600" height="64"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="z3Z-kC-JY1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                    <state key="normal" title="Close">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="closeLibraryButtonPressed:" destination="-1" eventType="touchUpInside" id="I6A-Tt-Mjr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="749-h4-LHQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2C8-mp-eTZ"/>
+                <constraint firstAttribute="bottom" secondItem="EMV-X1-A7c" secondAttribute="bottom" id="Cqh-ZP-hf9"/>
+                <constraint firstAttribute="bottom" secondItem="749-h4-LHQ" secondAttribute="bottom" id="Cud-jA-fqX"/>
+                <constraint firstItem="749-h4-LHQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Oad-TG-Xhv"/>
+                <constraint firstItem="EMV-X1-A7c" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Wqq-xo-Qo2"/>
+                <constraint firstAttribute="trailing" secondItem="749-h4-LHQ" secondAttribute="trailing" id="vaZ-TP-DLq"/>
+                <constraint firstAttribute="trailing" secondItem="EMV-X1-A7c" secondAttribute="trailing" id="xZB-w4-GvO"/>
+            </constraints>
+            <point key="canvasLocation" x="100" y="58"/>
+        </view>
+    </objects>
+</document>

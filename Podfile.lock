@@ -1,0 +1,13 @@
+PODS:
+  - FXBlurView (1.6.2)
+  - TTTAttributedLabel (1.10.1)
+
+DEPENDENCIES:
+  - FXBlurView (~> 1.6.2)
+  - TTTAttributedLabel (~> 1.10.1)
+
+SPEC CHECKSUMS:
+  FXBlurView: 47496afc9160097fa34af35fc4b310bd85d65dca
+  TTTAttributedLabel: 94bb04f1e005616002dd2cee0262a0082e533627
+
+COCOAPODS: 0.33.1
